@@ -1,0 +1,20 @@
+let humanScore = 0;
+let computerScore = 0;
+let currentRoundNumber = 1;
+
+const genertateTarget = () => {Math.floor(Math.random() * 10)};
+
+
+const compareGuesses = (humanGuess, computerGuess, secretTarget) => {
+if (Math.abs(humanGuess - secterTarget) <= Math.abs(computerGuess - secretTarget)){
+  return true;
+} else if (Math.abs(humanGuess - secterTarget) > Math.abs(computerGuess - secretTarget)){
+  return false;
+}
+}
+const updateScore = (winner) => {
+if (winner === 'human') {humanScore ++} else if (winner === 'computer') {computerScore++}
+};
+
+function advanceRound(){currentRoundNumber += 1}
+
