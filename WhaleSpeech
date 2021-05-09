@@ -1,0 +1,11 @@
+input = "turpentine and turtles";
+vowels = ['a','e','i','o','u'];
+whaleTalk = [];
+input.split('').filter(v => vowels.includes(v.toLowerCase())).forEach(x => {
+  if (x === 'e' || x === 'u') {
+    whaleTalk.push((x + x));
+  } else {
+    whaleTalk.push(x);
+  }
+});
+console.log(whaleTalk.join('').toUpperCase())
