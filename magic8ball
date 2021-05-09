@@ -1,0 +1,14 @@
+const randomNumber = Math.floor(Math.random() * 3);
+let eightBall = '';
+switch (randomNumber) {
+  case 0:
+  eightBall = 'Yes';
+  break;
+  case 1:
+  eightBall = 'No';
+  break;
+  case 2:
+  eightBall = 'Hell No';
+  break;
+}
+console.log(`The EIGHT BALL ANSWERED: ${eightBall}`);
