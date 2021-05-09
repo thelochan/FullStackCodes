@@ -1,0 +1,9 @@
+// Setting the value of kelvins as a constant
+const kelvin = 0;
+// Setting the value of Celsius WRT kelvin
+const celsius = kelvin - 273; 
+// Correct value of F
+let fahrenheit = celsius * (9/5) + 32;
+// Command to round the decimal value of F 
+fahrenheit = Math.floor(fahrenheit);
+console.log(`The temperature is ${fahrenheit} degrees Fahrenheit.`);
